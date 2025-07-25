@@ -1,0 +1,1737 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is the Unified Modeling Language?",
+    "question_vi": "Ngôn ngữ Mô hình hóa Hợp nhất (UML) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A programming language for describing object-oriented models.",
+        "text_vi": "Một ngôn ngữ lập trình để mô tả các mô hình hướng đối tượng."
+      },
+      {
+        "key": "B",
+        "text_en": "A diagramming tool for drawing object-oriented models.",
+        "text_vi": "Một công cụ vẽ sơ đồ để vẽ các mô hình hướng đối tượng."
+      },
+      {
+        "key": "C",
+        "text_en": "A graphical language for describing object-oriented models.",
+        "text_vi": "Một ngôn ngữ đồ họa để mô tả các mô hình hướng đối tượng."
+      },
+      {
+        "key": "D",
+        "text_en": "A standardized graphical language and notation for describing object-oriented models.",
+        "text_vi": "Một ngôn ngữ đồ họa và ký hiệu được tiêu chuẩn hóa để mô tả các mô hình hướng đối tượng."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "UML là một ngôn ngữ ký hiệu đồ họa chuẩn hóa. Nó không phải là công cụ vẽ (như Visio) hay ngôn ngữ lập trình (như Java), mà là bộ quy tắc và ký hiệu để mô tả thiết kế phần mềm. Đáp án D là đầy đủ và chính xác nhất."
+  },
+  {
+    "id": 2,
+    "question_en": "What is a software architecture?",
+    "question_vi": "Kiến trúc phần mềm là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The software inside a building.",
+        "text_vi": "Phần mềm bên trong một tòa nhà."
+      },
+      {
+        "key": "B",
+        "text_en": "The structure of a client/server system.",
+        "text_vi": "Cấu trúc của một hệ thống client/server."
+      },
+      {
+        "key": "C",
+        "text_en": "The overall structure of a software system.",
+        "text_vi": "Cấu trúc tổng thể của một hệ thống phần mềm."
+      },
+      {
+        "key": "D",
+        "text_en": "The software classes and their relationships.",
+        "text_vi": "Các lớp phần mềm và mối quan hệ của chúng."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Kiến trúc phần mềm là cái nhìn ở mức độ cao nhất về hệ thống, mô tả cấu trúc tổng thể và cách các thành phần chính tương tác với nhau."
+  },
+  {
+    "id": 3,
+    "question_en": "What is a software design notation?",
+    "question_vi": "Ký hiệu thiết kế phần mềm là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Notes about the software design.",
+        "text_vi": "Các ghi chú về thiết kế phần mềm."
+      },
+      {
+        "key": "B",
+        "text_en": "A graphical or textual description of the software.",
+        "text_vi": "Một mô tả bằng đồ họa hoặc văn bản của phần mềm."
+      },
+      {
+        "key": "C",
+        "text_en": "Documentation of the software.",
+        "text_vi": "Tài liệu của phần mềm."
+      },
+      {
+        "key": "D",
+        "text_en": "A systematic approach for producing a design.",
+        "text_vi": "Một phương pháp có hệ thống để tạo ra một thiết kế."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Ký hiệu thiết kế là ngôn ngữ (dù bằng hình ảnh hay chữ viết) được dùng để thể hiện, mô tả bản thiết kế đó."
+  },
+  {
+    "id": 4,
+    "question_en": "What does a statechart diagram depict?",
+    "question_vi": "Sơ đồ trạng thái mô tả điều gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Objects and links",
+        "text_vi": "Các đối tượng và liên kết"
+      },
+      {
+        "key": "B",
+        "text_en": "Classes and relationships",
+        "text_vi": "Các lớp và mối quan hệ"
+      },
+      {
+        "key": "C",
+        "text_en": "Objects and messages",
+        "text_vi": "Các đối tượng và thông điệp"
+      },
+      {
+        "key": "D",
+        "text_en": "States and events",
+        "text_vi": "Các trạng thái và sự kiện"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Sơ đồ trạng thái (Statechart Diagram) mô tả các trạng thái khác nhau mà một đối tượng có thể có và các sự kiện gây ra sự chuyển đổi giữa các trạng thái đó."
+  },
+  {
+    "id": 5,
+    "question_en": "What does a deployment diagram depict?",
+    "question_vi": "Sơ đồ triển khai mô tả điều gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The physical configuration of the system in terms of physical classes and physical connections between the classes",
+        "text_vi": "Cấu hình vật lý của hệ thống về các lớp vật lý và kết nối vật lý giữa các lớp."
+      },
+      {
+        "key": "B",
+        "text_en": "The physical configuration of the system in terms of physical objects and physical connections between the objects",
+        "text_vi": "Cấu hình vật lý của hệ thống về các đối tượng vật lý và kết nối vật lý giữa các đối tượng."
+      },
+      {
+        "key": "C",
+        "text_en": "The physical configuration of the system in terms of physical nodes and physical connections between the nodes",
+        "text_vi": "Cấu hình vật lý của hệ thống về các nút (node) vật lý và kết nối vật lý giữa các nút."
+      },
+      {
+        "key": "D",
+        "text_en": "The physical configuration of the system in terms of physical computers and physical networks between the computers",
+        "text_vi": "Cấu hình vật lý của hệ thống về các máy tính vật lý và mạng vật lý giữa các máy tính."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Sơ đồ triển khai (Deployment Diagram) cho thấy cách các thành phần phần mềm được phân bổ trên các tài nguyên phần cứng vật lý, được gọi là các 'nút' (nodes)."
+  },
+  {
+    "id": 6,
+    "question_en": "How is an association depicted on a class diagram?",
+    "question_vi": "Mối quan hệ kết hợp (association) được thể hiện trên sơ đồ lớp như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A solid line joining two class boxes",
+        "text_vi": "Một đường liền nét nối hai hộp lớp."
+      },
+      {
+        "key": "B",
+        "text_en": "A dashed line joining two class boxes",
+        "text_vi": "Một đường đứt nét nối hai hộp lớp."
+      },
+      {
+        "key": "C",
+        "text_en": "A diamond touching the upper class box",
+        "text_vi": "Một hình thoi chạm vào hộp lớp trên."
+      },
+      {
+        "key": "D",
+        "text_en": "An arrowhead touching the upper class box",
+        "text_vi": "Một đầu mũi tên chạm vào hộp lớp trên."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Trong sơ đồ lớp, một mối quan hệ kết hợp (association) giữa hai lớp được biểu diễn bằng một đường kẻ liền."
+  },
+  {
+    "id": 7,
+    "question_en": "Which of the following is a limitation of the waterfall life cycle model?",
+    "question_vi": "Đâu là một hạn chế của mô hình vòng đời thác nước?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Software is developed in phases.",
+        "text_vi": "Phần mềm được phát triển theo các giai đoạn."
+      },
+      {
+        "key": "B",
+        "text_en": "Each phase is completed before the next phase is started.",
+        "text_vi": "Mỗi giai đoạn được hoàn thành trước khi giai đoạn tiếp theo bắt đầu."
+      },
+      {
+        "key": "C",
+        "text_en": "Software development is cyclic.",
+        "text_vi": "Phát triển phần mềm có tính chu kỳ."
+      },
+      {
+        "key": "D",
+        "text_en": "Software requirements are not properly tested until a working system is available.",
+        "text_vi": "Yêu cầu phần mềm không được kiểm thử đúng cách cho đến khi có một hệ thống hoạt động."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Mô hình thác nước (waterfall) có nhược điểm lớn là người dùng chỉ thấy được sản phẩm cuối cùng. Nếu yêu cầu bị hiểu sai từ đầu, chỉ đến khi hệ thống hoàn thiện mới phát hiện ra, gây tốn kém để sửa chữa."
+  },
+  {
+    "id": 8,
+    "question_en": "What is \"black box\" testing?",
+    "question_vi": "Kiểm thử \"hộp đen\" là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "System testing",
+        "text_vi": "Kiểm thử hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "Integration testing",
+        "text_vi": "Kiểm thử tích hợp."
+      },
+      {
+        "key": "C",
+        "text_en": "Testing with knowledge of the system internals",
+        "text_vi": "Kiểm thử với kiến thức về nội bộ hệ thống."
+      },
+      {
+        "key": "D",
+        "text_en": "Testing without knowledge of the software internals",
+        "text_vi": "Kiểm thử mà không cần kiến thức về nội bộ phần mềm."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Kiểm thử hộp đen (black box) tập trung vào 'đầu vào' và 'đầu ra' của chức năng mà không quan tâm đến mã nguồn hay logic bên trong được xử lý như thế nào."
+  },
+  {
+    "id": 9,
+    "question_en": "What approach does the spiral model emphasize?",
+    "question_vi": "Mô hình xoắn ốc nhấn mạnh cách tiếp cận nào?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Phased software development",
+        "text_vi": "Phát triển phần mềm theo giai đoạn."
+      },
+      {
+        "key": "B",
+        "text_en": "Throwaway prototyping",
+        "text_vi": "Tạo mẫu dùng một lần."
+      },
+      {
+        "key": "C",
+        "text_en": "Risk-driven development",
+        "text_vi": "Phát triển dựa trên rủi ro."
+      },
+      {
+        "key": "D",
+        "text_en": "Incremental development",
+        "text_vi": "Phát triển tăng dần."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Mô hình xoắn ốc (spiral model) đặc biệt nhấn mạnh việc nhận diện và quản lý rủi ro ở mỗi vòng lặp phát triển."
+  },
+  {
+    "id": 10,
+    "question_en": "What is data abstraction?",
+    "question_vi": "Trừu tượng hóa dữ liệu là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Another name for information hiding",
+        "text_vi": "Một tên khác của việc che giấu thông tin."
+      },
+      {
+        "key": "B",
+        "text_en": "Encapsulating data so that its structure is hidden",
+        "text_vi": "Đóng gói dữ liệu để cấu trúc của nó được che giấu."
+      },
+      {
+        "key": "C",
+        "text_en": "Storing data in a database",
+        "text_vi": "Lưu trữ dữ liệu trong cơ sở dữ liệu."
+      },
+      {
+        "key": "D",
+        "text_en": "Storing data in a data structure",
+        "text_vi": "Lưu trữ dữ liệu trong cấu trúc dữ liệu."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Trừu tượng hóa dữ liệu là kỹ thuật che giấu các chi tiết phức tạp về cấu trúc và cách dữ liệu được lưu trữ, chỉ hiển thị các tính năng cần thiết."
+  },
+  {
+    "id": 11,
+    "question_en": "What is an operation (also known as method) of a class?",
+    "question_vi": "Operation (còn gọi là method) của một lớp là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Specification and the implementation of a function performed by a class",
+        "text_vi": "Đặc tả và triển khai một hàm được thực hiện bởi một lớp."
+      },
+      {
+        "key": "B",
+        "text_en": "Specification and the implementation of a subroutine provided by a class",
+        "text_vi": "Đặc tả và triển khai một chương trình con được cung cấp bởi một lớp."
+      },
+      {
+        "key": "C",
+        "text_en": "Specification and the implementation of a function or procedure provided by a class",
+        "text_vi": "Đặc tả và triển khai một hàm hoặc thủ tục được cung cấp bởi một lớp."
+      },
+      {
+        "key": "D",
+        "text_en": "Specification and the implementation of an interface provided by a class",
+        "text_vi": "Đặc tả và triển khai một giao diện được cung cấp bởi một lớp."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Một 'operation' (hoặc 'method') định nghĩa một hành vi hoặc chức năng mà một đối tượng của lớp đó có thể thực hiện."
+  },
+  {
+    "id": 12,
+    "question_en": "What is inheritance?",
+    "question_vi": "Kế thừa là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A mechanism for inheriting characteristics from a parent",
+        "text_vi": "Một cơ chế để kế thừa các đặc điểm từ cha mẹ."
+      },
+      {
+        "key": "B",
+        "text_en": "A mechanism for sharing and reusing code between classes",
+        "text_vi": "Một cơ chế để chia sẻ và tái sử dụng mã giữa các lớp."
+      },
+      {
+        "key": "C",
+        "text_en": "A mechanism for sharing data between classes",
+        "text_vi": "Một cơ chế để chia sẻ dữ liệu giữa các lớp."
+      },
+      {
+        "key": "D",
+        "text_en": "A mechanism for hiding information between classes",
+        "text_vi": "Một cơ chế để che giấu thông tin giữa các lớp."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Kế thừa (inheritance) cho phép một lớp (lớp con) sử dụng lại các thuộc tính và phương thức của một lớp khác (lớp cha), giúp tái sử dụng mã nguồn hiệu quả."
+  },
+  {
+    "id": 13,
+    "question_en": "What is carried out during incremental software construction?",
+    "question_vi": "Điều gì được thực hiện trong quá trình xây dựng phần mềm tăng dần?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Detailed design and coding of the classes in a subset of the system",
+        "text_vi": "Thiết kế chi tiết và mã hóa các lớp trong một tập hợp con của hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "Detailed design, coding, and unit testing of the classes in a subset of the system",
+        "text_vi": "Thiết kế chi tiết, mã hóa và kiểm thử đơn vị các lớp trong một tập hợp con của hệ thống."
+      },
+      {
+        "key": "C",
+        "text_en": "Coding and unit testing of the classes in a subset of the system",
+        "text_vi": "Mã hóa và kiểm thử đơn vị các lớp trong một tập hợp con của hệ thống."
+      },
+      {
+        "key": "D",
+        "text_en": "Unit and integration testing of the classes in a subset of the system",
+        "text_vi": "Kiểm thử đơn vị và tích hợp các lớp trong một tập hợp con của hệ thống."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Xây dựng phần mềm tăng dần bao gồm một chu trình hoàn chỉnh (thiết kế, code, unit test) cho một phần nhỏ của hệ thống, sau đó lặp lại cho các phần khác."
+  },
+  {
+    "id": 14,
+    "question_en": "What is carried out during system testing?",
+    "question_vi": "Điều gì được thực hiện trong quá trình kiểm thử hệ thống?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "White box testing",
+        "text_vi": "Kiểm thử hộp trắng."
+      },
+      {
+        "key": "B",
+        "text_en": "Black box testing",
+        "text_vi": "Kiểm thử hộp đen."
+      },
+      {
+        "key": "C",
+        "text_en": "Unit testing",
+        "text_vi": "Kiểm thử đơn vị."
+      },
+      {
+        "key": "D",
+        "text_en": "Integration testing",
+        "text_vi": "Kiểm thử tích hợp."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Kiểm thử hệ thống (system testing) thường là kiểm thử hộp đen, vì nó xác minh toàn bộ hệ thống đã tích hợp có đáp ứng các yêu cầu hay không, nhìn từ góc độ người dùng cuối."
+  },
+  {
+    "id": 15,
+    "question_en": "What is carried out during requirements modeling?",
+    "question_vi": "Điều gì được thực hiện trong quá trình mô hình hóa yêu cầu?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Functional requirements of the system are described in terms of functions, inputs, and outputs.",
+        "text_vi": "Các yêu cầu chức năng của hệ thống được mô tả dưới dạng các hàm, đầu vào và đầu ra."
+      },
+      {
+        "key": "B",
+        "text_en": "Functional requirements of the system are described in terms of actors and use cases.",
+        "text_vi": "Các yêu cầu chức năng của hệ thống được mô tả dưới dạng các tác nhân (actor) và ca sử dụng (use case)."
+      },
+      {
+        "key": "C",
+        "text_en": "Functional requirements of the system are described textually.",
+        "text_vi": "Các yêu cầu chức năng của hệ thống được mô tả bằng văn bản."
+      },
+      {
+        "key": "D",
+        "text_en": "Functional requirements of the system are determined by interviewing users.",
+        "text_vi": "Các yêu cầu chức năng của hệ thống được xác định bằng cách phỏng vấn người dùng."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Trong mô hình hóa hướng đối tượng hiện đại (sử dụng UML), yêu cầu chức năng được nắm bắt hiệu quả nhất thông qua các ca sử dụng (use cases), cho thấy cách các tác nhân (actors) tương tác với hệ thống."
+  },
+  {
+    "id": 16,
+    "question_en": "What is a use case package?",
+    "question_vi": "Gói ca sử dụng (use case package) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A package describing the actors in the system",
+        "text_vi": "Một gói mô tả các tác nhân trong hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "A package describing the use cases in the system",
+        "text_vi": "Một gói mô tả các ca sử dụng trong hệ thống."
+      },
+      {
+        "key": "C",
+        "text_en": "A group of related use cases",
+        "text_vi": "Một nhóm các ca sử dụng có liên quan."
+      },
+      {
+        "key": "D",
+        "text_en": "The package of objects that participate in the use case",
+        "text_vi": "Gói các đối tượng tham gia vào ca sử dụng."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "'Package' trong UML là một cơ chế để nhóm các phần tử liên quan. Do đó, một 'use case package' chỉ đơn giản là một cách để tổ chức, nhóm các ca sử dụng có liên quan với nhau lại cho gọn gàng."
+  },
+  {
+    "id": 17,
+    "question_en": "What can an inclusion use case be used for?",
+    "question_vi": "Ca sử dụng bao gồm (inclusion use case) có thể được dùng để làm gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "To describe an inclusive use case",
+        "text_vi": "Để mô tả một ca sử dụng bao hàm."
+      },
+      {
+        "key": "B",
+        "text_en": "To describe a lengthy interaction with an actor",
+        "text_vi": "Để mô tả một tương tác dài với một tác nhân."
+      },
+      {
+        "key": "C",
+        "text_en": "To describe a use case that includes other use cases",
+        "text_vi": "Để mô tả một ca sử dụng bao gồm các ca sử dụng khác."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "'Inclusion use case' (hay use case <<include>>) được dùng để tách một phần chức năng chung mà nhiều use case khác cùng sử dụng. Điều này giúp tránh lặp lại và dễ bảo trì."
+  },
+  {
+    "id": 18,
+    "question_en": "What is an alternative sequence in a use case?",
+    "question_vi": "Chuỗi thay thế (alternative sequence) trong một ca sử dụng là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A sequence that describes an error case",
+        "text_vi": "Một chuỗi mô tả một trường hợp lỗi."
+      },
+      {
+        "key": "B",
+        "text_en": "A sequence that is different from the main sequence",
+        "text_vi": "Một chuỗi khác với chuỗi chính."
+      },
+      {
+        "key": "C",
+        "text_en": "A sequence that describes interactions with a secondary actor",
+        "text_vi": "Một chuỗi mô tả các tương tác với một tác nhân phụ."
+      },
+      {
+        "key": "D",
+        "text_en": "A sequence that describes interactions with a primary actor",
+        "text_vi": "Một chuỗi mô tả các tương tác với một tác nhân chính."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Một ca sử dụng có một luồng chính (main sequence). Các luồng thay thế (alternative sequence) là các kịch bản khác có thể xảy ra, bao gồm cả các trường hợp ngoại lệ hoặc các lựa chọn khác của người dùng."
+  },
+  {
+    "id": 19,
+    "question_en": "What is a composition hierarchy?",
+    "question_vi": "Phân cấp hợp thành (Composition) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A weak form of a generalization/specialization hierarchy",
+        "text_vi": "Một dạng yếu của hệ thống phân cấp tổng quát hóa/chuyên biệt hóa."
+      },
+      {
+        "key": "B",
+        "text_en": "A strong form of a generalization/specialization hierarchy",
+        "text_vi": "Một dạng mạnh của hệ thống phân cấp tổng quát hóa/chuyên biệt hóa."
+      },
+      {
+        "key": "C",
+        "text_en": "A weak form of a whole/part relationship",
+        "text_vi": "Một dạng yếu của mối quan hệ toàn thể/bộ phận."
+      },
+      {
+        "key": "D",
+        "text_en": "A strong form of a whole/part relationship",
+        "text_vi": "Một dạng mạnh của mối quan hệ toàn thể/bộ phận."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Composition là mối quan hệ 'toàn thể/bộ phận' dạng mạnh. Các 'bộ phận' không thể tồn tại độc lập nếu 'toàn thể' bị hủy. Ví dụ: các phòng trong một ngôi nhà."
+  },
+  {
+    "id": 20,
+    "question_en": "What is an association class?",
+    "question_vi": "Lớp liên kết (association class) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A class with multiple associations",
+        "text_vi": "Một lớp có nhiều liên kết."
+      },
+      {
+        "key": "B",
+        "text_en": "A class with one association",
+        "text_vi": "Một lớp có một liên kết."
+      },
+      {
+        "key": "C",
+        "text_en": "A class that models an association between two or more classes",
+        "text_vi": "Một lớp mô hình hóa một liên kết giữa hai hoặc nhiều lớp."
+      },
+      {
+        "key": "D",
+        "text_en": "A class that models an association between two or more objects",
+        "text_vi": "Một lớp mô hình hóa một liên kết giữa hai hoặc nhiều đối tượng."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Khi một mối quan hệ (association) giữa hai lớp có các thuộc tính hoặc hành vi riêng, ta dùng một 'association class' để mô hình hóa chính mối quan hệ đó."
+  },
+  {
+    "id": 21,
+    "question_en": "What is an aggregation hierarchy?",
+    "question_vi": "Phân cấp kết tập (Aggregation) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A weak form of a generalization/specialization hierarchy",
+        "text_vi": "Một dạng yếu của hệ thống phân cấp tổng quát hóa/chuyên biệt hóa."
+      },
+      {
+        "key": "B",
+        "text_en": "A strong form of a generalization/specialization hierarchy",
+        "text_vi": "Một dạng mạnh của hệ thống phân cấp tổng quát hóa/chuyên biệt hóa."
+      },
+      {
+        "key": "C",
+        "text_en": "A weak form of a whole/part relationship",
+        "text_vi": "Một dạng yếu của mối quan hệ toàn thể/bộ phận."
+      },
+      {
+        "key": "D",
+        "text_en": "A strong form of a whole/part relationship",
+        "text_vi": "Một dạng mạnh của mối quan hệ toàn thể/bộ phận."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Aggregation là mối quan hệ 'toàn thể/bộ phận' dạng yếu. Các 'bộ phận' có thể tồn tại độc lập ngay cả khi 'toàn thể' bị hủy. Ví dụ: một chiếc xe và các bánh xe của nó."
+  },
+  {
+    "id": 22,
+    "question_en": "What is a coordinator object?",
+    "question_vi": "Đối tượng điều phối (coordinator object) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A manager object",
+        "text_vi": "Một đối tượng quản lý."
+      },
+      {
+        "key": "B",
+        "text_en": "An object that makes decisions based on a state machine",
+        "text_vi": "Một đối tượng đưa ra quyết định dựa trên máy trạng thái."
+      },
+      {
+        "key": "C",
+        "text_en": "A decision-making object",
+        "text_vi": "Một đối tượng ra quyết định."
+      },
+      {
+        "key": "D",
+        "text_en": "An object that decides which entity object to interact with",
+        "text_vi": "Một đối tượng quyết định đối tượng thực thể nào để tương tác."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Đối tượng điều phối có vai trò chính là đưa ra quyết định và điều phối công việc giữa các đối tượng khác, nhưng không trực tiếp chứa logic nghiệp vụ phức tạp."
+  },
+  {
+    "id": 23,
+    "question_en": "What is the purpose of a stereotype in class structuring?",
+    "question_vi": "Mục đích của stereotype trong việc cấu trúc lớp là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "To label a class according to its class structuring criterion",
+        "text_vi": "Để gán nhãn cho một lớp theo tiêu chí cấu trúc lớp của nó."
+      },
+      {
+        "key": "B",
+        "text_en": "To identify the objects that belong to the same class",
+        "text_vi": "Để xác định các đối tượng thuộc cùng một lớp."
+      },
+      {
+        "key": "C",
+        "text_en": "To distinguish between external objects and software objects",
+        "text_vi": "Để phân biệt giữa các đối tượng bên ngoài và đối tượng phần mềm."
+      },
+      {
+        "key": "D",
+        "text_en": "To identify the association between two classes",
+        "text_vi": "Để xác định sự liên kết giữa hai lớp."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Stereotype (kiểu mẫu) là một cách để mở rộng UML, cho phép bạn định nghĩa các loại phần tử mới. Trong cấu trúc lớp, nó dùng để gán nhãn cho lớp với một vai trò cụ thể (ví dụ: <<entity>>, <<boundary>>, <<control>>)."
+  },
+  {
+    "id": 24,
+    "question_en": "What do class structuring criteria help with?",
+    "question_vi": "Các tiêu chí cấu trúc lớp giúp ích gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Structuring an application into classes",
+        "text_vi": "Cấu trúc một ứng dụng thành các lớp."
+      },
+      {
+        "key": "B",
+        "text_en": "Defining the attributes of a class",
+        "text_vi": "Định nghĩa các thuộc tính của một lớp."
+      },
+      {
+        "key": "C",
+        "text_en": "Defining the associations of a class",
+        "text_vi": "Định nghĩa các liên kết của một lớp."
+      },
+      {
+        "key": "D",
+        "text_en": "Defining the operations of a class",
+        "text_vi": "Định nghĩa các hoạt động của một lớp."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Các tiêu chí cấu trúc lớp (như entity, boundary, control) là một bộ hướng dẫn giúp nhà phân tích quyết định cách phân chia hệ thống thành các lớp một cách hợp lý."
+  },
+  {
+    "id": 25,
+    "question_en": "How is an actor depicted on an interaction diagram?",
+    "question_vi": "Tác nhân (actor) được thể hiện trên sơ đồ tương tác như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An actor has an association with the interaction diagram.",
+        "text_vi": "Một tác nhân có một liên kết với sơ đồ tương tác."
+      },
+      {
+        "key": "B",
+        "text_en": "An actor can provide input to or receive output from a boundary object.",
+        "text_vi": "Một tác nhân có thể cung cấp đầu vào hoặc nhận đầu ra từ một đối tượng biên."
+      },
+      {
+        "key": "C",
+        "text_en": "An actor can provide input to or receive output from a boundary class.",
+        "text_vi": "Một tác nhân có thể cung cấp đầu vào hoặc nhận đầu ra từ một lớp biên."
+      },
+      {
+        "key": "D",
+        "text_en": "An instance of an actor can provide input to or receive output from a boundary object.",
+        "text_vi": "Một thể hiện của một tác nhân có thể cung cấp đầu vào hoặc nhận đầu ra từ một đối tượng biên."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Sơ đồ tương tác (ví dụ: sơ đồ tuần tự) mô tả sự tương tác giữa các *thể hiện* (instance/object). Do đó, một thể hiện của tác nhân sẽ tương tác (gửi/nhận thông điệp) với một đối tượng biên (boundary object)."
+  },
+  {
+    "id": 26,
+    "question_en": "Which of the following interactions is NOT likely to happen on an interaction diagram?",
+    "question_vi": "Tương tác nào sau đây KHÔNG có khả năng xảy ra trên sơ đồ tương tác?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A user interaction object sends a message to an entity object.",
+        "text_vi": "Một đối tượng tương tác người dùng gửi thông điệp đến một đối tượng thực thể."
+      },
+      {
+        "key": "B",
+        "text_en": "An input object sends a message to a state-dependent control object.",
+        "text_vi": "Một đối tượng đầu vào gửi thông điệp đến một đối tượng điều khiển phụ thuộc trạng thái."
+      },
+      {
+        "key": "C",
+        "text_en": "An input object sends a message to a printer object.",
+        "text_vi": "Một đối tượng đầu vào gửi thông điệp đến một đối tượng máy in."
+      },
+      {
+        "key": "D",
+        "text_en": "A user interaction object sends a message to a proxy object",
+        "text_vi": "Một đối tượng tương tác người dùng gửi thông điệp đến một đối tượng proxy."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Theo kiến trúc phổ biến (ví dụ: MVC), lớp giao diện (User Interaction/Boundary) không nên tương tác trực tiếp với lớp dữ liệu (Entity). Nó nên thông qua lớp điều khiển (Control)."
+  },
+  {
+    "id": 27,
+    "question_en": "What is the instance form of an interaction diagram?",
+    "question_vi": "Dạng thể hiện của sơ đồ tương tác là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Depicts several object instances interacting with each other",
+        "text_vi": "Mô tả một số thể hiện đối tượng tương tác với nhau."
+      },
+      {
+        "key": "B",
+        "text_en": "Depicts one possible sequence of interactions among object instances",
+        "text_vi": "Mô tả một chuỗi tương tác có thể có giữa các thể hiện đối tượng."
+      },
+      {
+        "key": "C",
+        "text_en": "Depicts all possible interactions among object instances",
+        "text_vi": "Mô tả tất cả các tương tác có thể có giữa các thể hiện đối tượng."
+      },
+      {
+        "key": "D",
+        "text_en": "Depicts all object instances and their links to each other",
+        "text_vi": "Mô tả tất cả các thể hiện đối tượng và liên kết của chúng với nhau."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Sơ đồ tương tác ở dạng thể hiện (ví dụ: sơ đồ tuần tự) mô tả một kịch bản cụ thể, tức là *một* chuỗi các thông điệp được trao đổi giữa các đối tượng để thực hiện một ca sử dụng."
+  },
+  {
+    "id": 28,
+    "question_en": "What is a state transition into a composite state equivalent to?",
+    "question_vi": "Sự chuyển đổi trạng thái vào một trạng thái phức hợp tương đương với điều gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A transition into only one of the substates",
+        "text_vi": "Một sự chuyển đổi vào chỉ một trong các trạng thái con."
+      },
+      {
+        "key": "B",
+        "text_en": "A transition into each of the substates",
+        "text_vi": "Một sự chuyển đổi vào mỗi trạng thái con."
+      },
+      {
+        "key": "C",
+        "text_en": "A transition into none of the substates",
+        "text_vi": "Một sự chuyển đổi vào không có trạng thái con nào."
+      },
+      {
+        "key": "D",
+        "text_en": "A transition into any one of the substates",
+        "text_vi": "Một sự chuyển đổi vào bất kỳ một trong các trạng thái con."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Trạng thái phức hợp (composite state) có một trạng thái con ban đầu. Khi có một sự chuyển đổi đến trạng thái phức hợp, hệ thống sẽ tự động chuyển tiếp vào trạng thái con ban đầu đó."
+  },
+  {
+    "id": 29,
+    "question_en": "What is a state in a state machine?",
+    "question_vi": "Trạng thái trong máy trạng thái là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A recognizable situation that exists over an interval of time",
+        "text_vi": "Một tình huống có thể nhận biết tồn tại trong một khoảng thời gian."
+      },
+      {
+        "key": "B",
+        "text_en": "A condition that is True or False",
+        "text_vi": "Một điều kiện là Đúng hoặc Sai."
+      },
+      {
+        "key": "C",
+        "text_en": "An input from the external environment",
+        "text_vi": "Một đầu vào từ môi trường bên ngoài."
+      },
+      {
+        "key": "D",
+        "text_en": "An output from the system",
+        "text_vi": "Một đầu ra từ hệ thống."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Trạng thái (state) biểu thị một điều kiện hoặc tình huống trong vòng đời của một đối tượng, trong đó nó thỏa mãn một số điều kiện, thực hiện một số hoạt động hoặc chờ đợi một số sự kiện."
+  },
+  {
+    "id": 30,
+    "question_en": "What is an entry action in a state machine?",
+    "question_vi": "Hành động đầu vào (entry action) trong máy trạng thái là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An action that is performed when the state is entered",
+        "text_vi": "Một hành động được thực hiện khi trạng thái được nhập vào."
+      },
+      {
+        "key": "B",
+        "text_en": "An action that is performed when the state is left",
+        "text_vi": "Một hành động được thực hiện khi rời khỏi trạng thái."
+      },
+      {
+        "key": "C",
+        "text_en": "An action that starts executing when the state is entered and completes executing when the state is left",
+        "text_vi": "Một hành động bắt đầu thực thi khi trạng thái được nhập vào và hoàn thành thực thi khi rời khỏi trạng thái."
+      },
+      {
+        "key": "D",
+        "text_en": "An action that executes as a result of a state transition",
+        "text_vi": "Một hành động thực thi do kết quả của một sự chuyển đổi trạng thái."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "'Entry action' là một hành động được thực thi tự động ngay khi đối tượng chuyển vào một trạng thái cụ thể."
+  },
+  {
+    "id": 31,
+    "question_en": "What does a state-dependent interaction involve?",
+    "question_vi": "Một tương tác phụ thuộc trạng thái bao gồm những gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A control object",
+        "text_vi": "Một đối tượng điều khiển."
+      },
+      {
+        "key": "B",
+        "text_en": "A state-dependent entity object",
+        "text_vi": "Một đối tượng thực thể phụ thuộc trạng thái."
+      },
+      {
+        "key": "C",
+        "text_en": "A state-dependent control object",
+        "text_vi": "Một đối tượng điều khiển phụ thuộc trạng thái."
+      },
+      {
+        "key": "D",
+        "text_en": "A state-dependent user interaction object",
+        "text_vi": "Một đối tượng tương tác người dùng phụ thuộc trạng thái."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Tương tác phụ thuộc vào trạng thái thường được quản lý bởi một đối tượng điều khiển (Control Object) có máy trạng thái (state machine) bên trong nó. Hành vi của nó thay đổi tùy thuộc vào trạng thái hiện tại."
+  },
+  {
+    "id": 32,
+    "question_en": "An output message from a state dependent control object corresponds to:",
+    "question_vi": "Một thông điệp đầu ra từ một đối tượng điều khiển phụ thuộc trạng thái tương ứng với:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An event on the internal state machine",
+        "text_vi": "Một sự kiện trên máy trạng thái nội bộ."
+      },
+      {
+        "key": "B",
+        "text_en": "An action on the internal state machine",
+        "text_vi": "Một hành động trên máy trạng thái nội bộ."
+      },
+      {
+        "key": "C",
+        "text_en": "A condition on the internal state machine",
+        "text_vi": "Một điều kiện trên máy trạng thái nội bộ."
+      },
+      {
+        "key": "D",
+        "text_en": "A state on the internal state machine",
+        "text_vi": "Một trạng thái trên máy trạng thái nội bộ."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Trong một máy trạng thái, khi một sự kiện xảy ra gây ra chuyển đổi trạng thái, một 'hành động' (action) có thể được thực thi. Việc gửi một thông điệp ra bên ngoài chính là một ví dụ của hành động đó."
+  },
+  {
+    "id": 33,
+    "question_en": "An interaction diagram should be developed for:",
+    "question_vi": "Một sơ đồ tương tác nên được phát triển cho:",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Only the main sequence of the use case",
+        "text_vi": "Chỉ chuỗi chính của ca sử dụng."
+      },
+      {
+        "key": "B",
+        "text_en": "The main sequence and every alternative sequence of the use case",
+        "text_vi": "Chuỗi chính và mọi chuỗi thay thế của ca sử dụng."
+      },
+      {
+        "key": "C",
+        "text_en": "The main sequence and a representative alternative sequence of the use case",
+        "text_vi": "Chuỗi chính và một chuỗi thay thế đại diện của ca sử dụng."
+      },
+      {
+        "key": "D",
+        "text_en": "The alternative sequences of the use case",
+        "text_vi": "Các chuỗi thay thế của ca sử dụng."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Để đảm bảo thiết kế đầy đủ, lý tưởng nhất là phải tạo sơ đồ tương tác cho cả luồng chính (happy path) và tất cả các luồng thay thế (alternative sequences) để bao quát hết các kịch bản có thể xảy ra."
+  },
+  {
+    "id": 34,
+    "question_en": "What is a dynamic view of a software architecture?",
+    "question_vi": "Cái nhìn động (dynamic view) của kiến trúc phần mềm là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A view in terms of a module hierarchy",
+        "text_vi": "Một cái nhìn về hệ thống phân cấp mô-đun."
+      },
+      {
+        "key": "B",
+        "text_en": "A view in terms of components and connectors",
+        "text_vi": "Một cái nhìn về các thành phần và kết nối."
+      },
+      {
+        "key": "C",
+        "text_en": "A view of the physical configuration in terms of nodes and interconnections",
+        "text_vi": "Một cái nhìn về cấu hình vật lý về các nút và kết nối liên thông."
+      },
+      {
+        "key": "D",
+        "text_en": "A view in terms of objects and messages",
+        "text_vi": "Một cái nhìn về các đối tượng và thông điệp."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "'Dynamic view' (cái nhìn động) của kiến trúc mô tả hành vi của hệ thống khi nó đang chạy, tức là cách các đối tượng tương tác với nhau bằng cách trao đổi thông điệp."
+  },
+  {
+    "id": 35,
+    "question_en": "What is a software architectural pattern?",
+    "question_vi": "Mẫu kiến trúc phần mềm là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The structure of the major subsystems of a system",
+        "text_vi": "Cấu trúc của các hệ thống con chính của một hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "The components and connectors in a software architecture",
+        "text_vi": "Các thành phần và kết nối trong một kiến trúc phần mềm."
+      },
+      {
+        "key": "C",
+        "text_en": "A small group of collaborating objects",
+        "text_vi": "Một nhóm nhỏ các đối tượng hợp tác."
+      },
+      {
+        "key": "D",
+        "text_en": "A recurring architecture used in a variety of systems",
+        "text_vi": "Một kiến trúc lặp lại được sử dụng trong nhiều hệ thống khác nhau."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Mẫu kiến trúc (Architectural Pattern) là một giải pháp chung, đã được kiểm chứng và có thể tái sử dụng cho một vấn đề kiến trúc thường gặp. Ví dụ: Client-Server, MVC, Layered."
+  },
+  {
+    "id": 36,
+    "question_en": "A producer sends a message to a consumer. Which one of the following is synchronous message communication with reply?",
+    "question_vi": "Một bên sản xuất gửi thông điệp cho một bên tiêu thụ. Cái nào sau đây là giao tiếp thông điệp đồng bộ có phản hồi?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The producer waits for a response from the consumer.",
+        "text_vi": "Nhà sản xuất đợi phản hồi từ người tiêu dùng."
+      },
+      {
+        "key": "B",
+        "text_en": "The producer does not wait for a response from the consumer.",
+        "text_vi": "Nhà sản xuất không đợi phản hồi từ người tiêu dùng."
+      },
+      {
+        "key": "C",
+        "text_en": "The producer goes to sleep",
+        "text_vi": "Nhà sản xuất đi vào trạng thái ngủ."
+      },
+      {
+        "key": "D",
+        "text_en": "The producer waits for a timeout.",
+        "text_vi": "Nhà sản xuất đợi cho đến khi hết thời gian chờ."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Giao tiếp đồng bộ (synchronous) có nghĩa là bên gửi (producer) sẽ bị chặn và phải chờ cho đến khi bên nhận (consumer) xử lý xong và gửi lại phản hồi."
+  },
+  {
+    "id": 37,
+    "question_en": "When is a control subsystem required?",
+    "question_vi": "Khi nào một hệ thống con điều khiển được yêu cầu?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "If the subsystem needs to control several internal objects",
+        "text_vi": "Nếu hệ thống con cần kiểm soát một số đối tượng nội bộ."
+      },
+      {
+        "key": "B",
+        "text_en": "If the subsystem needs to control multiple I/O devices",
+        "text_vi": "Nếu hệ thống con cần kiểm soát nhiều thiết bị I/O."
+      },
+      {
+        "key": "C",
+        "text_en": "If the subsystem needs to control multiple client subsystems",
+        "text_vi": "Nếu hệ thống con cần kiểm soát nhiều hệ thống con client."
+      },
+      {
+        "key": "D",
+        "text_en": "If the subsystem needs to control the execution of other subsystems",
+        "text_vi": "Nếu hệ thống con cần kiểm soát việc thực thi của các hệ thống con khác."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Một hệ thống con điều khiển (control subsystem) được sử dụng ở mức độ kiến trúc cao hơn để quản lý và điều phối luồng thực thi chung giữa các hệ thống con khác."
+  },
+  {
+    "id": 38,
+    "question_en": "Which of the following objects should be assigned to the same subsystem?",
+    "question_vi": "Những đối tượng nào sau đây nên được gán vào cùng một hệ thống con?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Objects that are part of the same composite object",
+        "text_vi": "Các đối tượng là một phần của cùng một đối tượng phức hợp."
+      },
+      {
+        "key": "B",
+        "text_en": "Client and server objects",
+        "text_vi": "Các đối tượng client và server."
+      },
+      {
+        "key": "C",
+        "text_en": "User interface and entity objects",
+        "text_vi": "Các đối tượng giao diện người dùng và đối tượng thực thể."
+      },
+      {
+        "key": "D",
+        "text_en": "Objects that are associated with each other",
+        "text_vi": "Các đối tượng có liên kết với nhau."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Các đối tượng có mối quan hệ mạnh với nhau, đặc biệt là quan hệ Composition (là một phần của nhau), nên được đặt trong cùng một hệ thống con (subsystem) để tăng tính gắn kết (cohesion)."
+  },
+  {
+    "id": 39,
+    "question_en": "Which of the following objects are NOT likely to be in the same subsystem?",
+    "question_vi": "Những đối tượng nào sau đây KHÔNG có khả năng ở trong cùng một hệ thống con?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "User interface object and entity object",
+        "text_vi": "Đối tượng giao diện người dùng và đối tượng thực thể."
+      },
+      {
+        "key": "B",
+        "text_en": "State-dependent control object and coordinator object",
+        "text_vi": "Đối tượng điều khiển phụ thuộc trạng thái và đối tượng điều phối."
+      },
+      {
+        "key": "C",
+        "text_en": "Business logic object and entity object",
+        "text_vi": "Đối tượng logic nghiệp vụ và đối tượng thực thể."
+      },
+      {
+        "key": "D",
+        "text_en": "I/O object and state-dependent control object",
+        "text_vi": "Đối tượng I/O và đối tượng điều khiển phụ thuộc trạng thái."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Để giảm sự phụ thuộc (coupling), đối tượng giao diện người dùng (UI) và đối tượng thực thể (Entity) thường được tách ra thành các hệ thống con (hoặc các tầng) riêng biệt."
+  },
+  {
+    "id": 40,
+    "question_en": "Which of the following is NOT allowed through inheritance?",
+    "question_vi": "Điều nào sau đây KHÔNG được phép thông qua kế thừa?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Subclass inherits attributes from superclass.",
+        "text_vi": "Lớp con kế thừa các thuộc tính từ lớp cha."
+      },
+      {
+        "key": "B",
+        "text_en": "Subclass inherits operations from superclass.",
+        "text_vi": "Lớp con kế thừa các hoạt động từ lớp cha."
+      },
+      {
+        "key": "C",
+        "text_en": "Subclass redefines attributes inherited from superclass.",
+        "text_vi": "Lớp con định nghĩa lại các thuộc tính được kế thừa từ lớp cha."
+      },
+      {
+        "key": "D",
+        "text_en": "Subclass redefines operations inherited from superclass.",
+        "text_vi": "Lớp con định nghĩa lại các hoạt động được kế thừa từ lớp cha."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Trong kế thừa, lớp con có thể định nghĩa lại (override) các phương thức/hoạt động (operations) của lớp cha, nhưng không được phép định nghĩa lại các thuộc tính (attributes)."
+  },
+  {
+    "id": 41,
+    "question_en": "Which of the following is unlikely to be encapsulated in a business logic class?",
+    "question_vi": "Điều nào sau đây không có khả năng được đóng gói trong một lớp logic nghiệp vụ?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A business rule",
+        "text_vi": "Một quy tắc nghiệp vụ."
+      },
+      {
+        "key": "B",
+        "text_en": "Calls to operations of an entity class",
+        "text_vi": "Các cuộc gọi đến hoạt động của một lớp thực thể."
+      },
+      {
+        "key": "C",
+        "text_en": "Deny cash withdrawal if balance of account is less than $10",
+        "text_vi": "Từ chối rút tiền nếu số dư tài khoản nhỏ hơn $10."
+      },
+      {
+        "key": "D",
+        "text_en": "A dialog box",
+        "text_vi": "Một hộp thoại."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "'Hộp thoại (dialog box)' là một thành phần của giao diện người dùng (UI). Lớp logic nghiệp vụ chỉ nên chứa các quy tắc và xử lý nghiệp vụ, không nên chứa các yếu tố giao diện."
+  },
+  {
+    "id": 42,
+    "question_en": "Which of the following is unlikely to be a graphical user interface class?",
+    "question_vi": "Điều nào sau đây không có khả năng là một lớp giao diện người dùng đồ họa?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A menu",
+        "text_vi": "Một menu."
+      },
+      {
+        "key": "B",
+        "text_en": "A window",
+        "text_vi": "Một cửa sổ."
+      },
+      {
+        "key": "C",
+        "text_en": "A button",
+        "text_vi": "Một nút bấm."
+      },
+      {
+        "key": "D",
+        "text_en": "A pin",
+        "text_vi": "Một cái ghim."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Menu, cửa sổ (window), và nút bấm (button) đều là các thành phần đồ họa phổ biến của giao diện người dùng. 'Pin' (ghim) không phải là một lớp giao diện người dùng tiêu chuẩn."
+  },
+  {
+    "id": 43,
+    "question_en": "How is a concurrent service designed?",
+    "question_vi": "Dịch vụ đồng thời được thiết kế như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "One object that responds to requests from clients",
+        "text_vi": "Một đối tượng phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "B",
+        "text_en": "Multiple objects that respond to requests from clients",
+        "text_vi": "Nhiều đối tượng phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "C",
+        "text_en": "One subsystem that responds to requests from clients",
+        "text_vi": "Một hệ thống con phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "D",
+        "text_en": "Multiple subsystems that respond to requests from clients",
+        "text_vi": "Nhiều hệ thống con phản hồi các yêu cầu từ client."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Dịch vụ đồng thời (concurrent service) được thiết kế để xử lý nhiều yêu cầu của client cùng một lúc. Cách phổ biến để làm điều này là tạo ra một đối tượng xử lý riêng cho mỗi yêu cầu."
+  },
+  {
+    "id": 44,
+    "question_en": "When designing an entity class as a relational table, which of the following is NOT true?",
+    "question_vi": "Khi thiết kế một lớp thực thể thành một bảng quan hệ, điều nào sau đây KHÔNG đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The relational table has multiple primary keys.",
+        "text_vi": "Bảng quan hệ có nhiều khóa chính."
+      },
+      {
+        "key": "B",
+        "text_en": "The relational table has multiple foreign keys.",
+        "text_vi": "Bảng quan hệ có nhiều khóa ngoại."
+      },
+      {
+        "key": "C",
+        "text_en": "The relational table has a primary key.",
+        "text_vi": "Bảng quan hệ có một khóa chính."
+      },
+      {
+        "key": "D",
+        "text_en": "The relational table has a concatenated primary key.",
+        "text_vi": "Bảng quan hệ có một khóa chính ghép."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Theo định nghĩa của mô hình cơ sở dữ liệu quan hệ, một bảng chỉ có thể có *một* khóa chính (primary key). Khóa chính đó có thể là một cột đơn hoặc là khóa ghép từ nhiều cột."
+  },
+  {
+    "id": 45,
+    "question_en": "How is a sequential service designed?",
+    "question_vi": "Dịch vụ tuần tự được thiết kế như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "One object that responds to requests from clients",
+        "text_vi": "Một đối tượng phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "B",
+        "text_en": "Multiple objects that respond to requests from clients",
+        "text_vi": "Nhiều đối tượng phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "C",
+        "text_en": "One subsystem that responds to requests from clients",
+        "text_vi": "Một hệ thống con phản hồi các yêu cầu từ client."
+      },
+      {
+        "key": "D",
+        "text_en": "Multiple subsystems that respond to requests from clients",
+        "text_vi": "Nhiều hệ thống con phản hồi các yêu cầu từ client."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Dịch vụ tuần tự (sequential service) xử lý các yêu cầu một cách lần lượt, hết yêu cầu này mới đến yêu cầu khác. Do đó, nó thường được thiết kế với một đối tượng duy nhất xử lý tất cả các yêu cầu."
+  },
+  {
+    "id": 46,
+    "question_en": "Which of the following properties DOES NOT apply to a service?",
+    "question_vi": "Thuộc tính nào sau đây KHÔNG áp dụng cho một dịch vụ?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Reusable",
+        "text_vi": "Có thể tái sử dụng."
+      },
+      {
+        "key": "B",
+        "text_en": "Discoverable",
+        "text_vi": "Có thể khám phá."
+      },
+      {
+        "key": "C",
+        "text_en": "Fixed",
+        "text_vi": "Cố định."
+      },
+      {
+        "key": "D",
+        "text_en": "Autonomous",
+        "text_vi": "Tự trị."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Các dịch vụ (trong kiến trúc hướng dịch vụ - SOA) được thiết kế để có thể tái sử dụng, tự trị và có thể được các client khám phá. Chúng không 'cố định' mà có thể được cập nhật, thay thế hoặc thay đổi."
+  },
+  {
+    "id": 47,
+    "question_en": "With a Negotiation pattern, which of the following is NOT true?",
+    "question_vi": "Với mẫu Đàm phán (Negotiation pattern), điều nào sau đây KHÔNG đúng?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The client agent can propose a service.",
+        "text_vi": "Tác nhân client có thể đề xuất một dịch vụ."
+      },
+      {
+        "key": "B",
+        "text_en": "The service agent can offer a service in response to a client agent proposal.",
+        "text_vi": "Tác nhân dịch vụ có thể cung cấp một dịch vụ để đáp lại đề xuất của tác nhân client."
+      },
+      {
+        "key": "C",
+        "text_en": "The client agent can request a service.",
+        "text_vi": "Tác nhân client có thể yêu cầu một dịch vụ."
+      },
+      {
+        "key": "D",
+        "text_en": "The service agent can offer a service in response to a client agent request.",
+        "text_vi": "Tác nhân dịch vụ có thể cung cấp một dịch vụ để đáp lại yêu cầu của tác nhân client."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Trong mẫu đàm phán (Negotiation), client *yêu cầu* một dịch vụ (request) và service *cung cấp* một dịch vụ (offer). Client không 'đề xuất' (propose) dịch vụ."
+  },
+  {
+    "id": 48,
+    "question_en": "What is an object broker?",
+    "question_vi": "Object broker là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An object that breaks into a system",
+        "text_vi": "Một đối tượng đột nhập vào một hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "An object that sends requests to other objects",
+        "text_vi": "Một đối tượng gửi yêu cầu đến các đối tượng khác."
+      },
+      {
+        "key": "C",
+        "text_en": "An object that handles requests sent by other objects",
+        "text_vi": "Một đối tượng xử lý các yêu cầu được gửi bởi các đối tượng khác."
+      },
+      {
+        "key": "D",
+        "text_en": "An object that mediates interactions between clients and services",
+        "text_vi": "Một đối tượng trung gian cho các tương tác giữa client và dịch vụ."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "'Object Broker' hoạt động như một 'người môi giới', giúp các client tìm và giao tiếp với các dịch vụ mà không cần biết vị trí hay chi tiết triển khai của dịch vụ đó."
+  },
+  {
+    "id": 49,
+    "question_en": "In a distributed component-based software architecture, which of the following statements is the most complete description of component deployment?",
+    "question_vi": "Trong kiến trúc phần mềm dựa trên thành phần phân tán, câu nào sau đây mô tả đầy đủ nhất về việc triển khai thành phần?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Component instances can be deployed to different nodes in a geographically distributed environment.",
+        "text_vi": "Các thể hiện thành phần có thể được triển khai đến các nút khác nhau trong một môi trường phân tán địa lý."
+      },
+      {
+        "key": "B",
+        "text_en": "Component instances can be deployed to different nodes in a geographically distributed environment before design.",
+        "text_vi": "Các thể hiện thành phần có thể được triển khai đến các nút khác nhau trong một môi trường phân tán địa lý trước khi thiết kế."
+      },
+      {
+        "key": "C",
+        "text_en": "Component instances can be deployed to different nodes in a geographically distributed environment before implementation.",
+        "text_vi": "Các thể hiện thành phần có thể được triển khai đến các nút khác nhau trong một môi trường phân tán địa lý trước khi thực hiện."
+      },
+      {
+        "key": "D",
+        "text_en": "Component instances can be deployed to different nodes in a geographically distributed environment after design and implementation.",
+        "text_vi": "Các thể hiện thành phần có thể được triển khai đến các nút khác nhau trong một môi trường phân tán địa lý sau khi thiết kế và thực hiện."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Triển khai (deployment) là hành động cài đặt và cấu hình phần mềm trên phần cứng. Hành động này chỉ có thể xảy ra *sau khi* các thành phần đã được thiết kế và lập trình (implementation) xong."
+  },
+  {
+    "id": 50,
+    "question_en": "What is broadcast message communication?",
+    "question_vi": "Giao tiếp thông điệp quảng bá (broadcast) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A message sent to several recipients",
+        "text_vi": "Một thông điệp được gửi đến một số người nhận."
+      },
+      {
+        "key": "B",
+        "text_en": "A message sent to a specific recipient",
+        "text_vi": "Một thông điệp được gửi đến một người nhận cụ thể."
+      },
+      {
+        "key": "C",
+        "text_en": "A message sent to all recipients",
+        "text_vi": "Một thông điệp được gửi đến tất cả người nhận."
+      },
+      {
+        "key": "D",
+        "text_en": "A message sent to recipients who are members of a group",
+        "text_vi": "Một thông điệp được gửi đến những người nhận là thành viên của một nhóm."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Giao tiếp quảng bá (broadcast) là hình thức gửi một thông điệp đến *tất cả* các thành viên có thể nhận trong mạng hoặc hệ thống, mà không cần chỉ định một đích cụ thể."
+  },
+  {
+    "id": 51,
+    "question_en": "What is an advantage of localized autonomy in component-based design?",
+    "question_vi": "Lợi ích của tính tự trị cục bộ trong thiết kế dựa trên thành phần là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "If a component goes down, other components can continue to execute.",
+        "text_vi": "Nếu một thành phần bị lỗi, các thành phần khác có thể tiếp tục thực thi."
+      },
+      {
+        "key": "B",
+        "text_en": "Components execute concurrently.",
+        "text_vi": "Các thành phần thực thi đồng thời."
+      },
+      {
+        "key": "C",
+        "text_en": "Components are distributed.",
+        "text_vi": "Các thành phần được phân tán."
+      },
+      {
+        "key": "D",
+        "text_en": "Components communicate using messages.",
+        "text_vi": "Các thành phần giao tiếp bằng thông điệp."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "'Localized autonomy' có nghĩa là mỗi thành phần hoạt động tương đối độc lập. Lợi ích lớn của việc này là tăng khả năng chịu lỗi: nếu một thành phần gặp sự cố, nó không làm sập toàn bộ hệ thống."
+  },
+  {
+    "id": 52,
+    "question_en": "Which of the following is true for a Centralized Control architectural pattern?",
+    "question_vi": "Điều nào sau đây đúng với mẫu kiến trúc Điều khiển Tập trung?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Control is divided among various control components.",
+        "text_vi": "Việc kiểm soát được phân chia giữa các thành phần kiểm soát khác nhau."
+      },
+      {
+        "key": "B",
+        "text_en": "It provides the overall control and sequencing of the system.",
+        "text_vi": "Nó cung cấp sự kiểm soát và sắp xếp trình tự tổng thể của hệ thống."
+      },
+      {
+        "key": "C",
+        "text_en": "It provides overall control by coordinating several control components.",
+        "text_vi": "Nó cung cấp sự kiểm soát tổng thể bằng cách phối hợp một số thành phần kiểm soát."
+      },
+      {
+        "key": "D",
+        "text_en": "It provides overall control over various I/O objects",
+        "text_vi": "Nó cung cấp sự kiểm soát tổng thể đối với các đối tượng I/O khác nhau."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Mẫu kiến trúc Điều khiển tập trung (Centralized Control) có một thành phần trung tâm duy nhất chịu trách nhiệm điều khiển toàn bộ luồng hoạt động và tuần tự của hệ thống."
+  },
+  {
+    "id": 53,
+    "question_en": "What is the difference between an active object and a passive object?",
+    "question_vi": "Sự khác biệt giữa đối tượng chủ động (active) và đối tượng bị động (passive) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An active object controls a passive object.",
+        "text_vi": "Một đối tượng chủ động kiểm soát một đối tượng bị động."
+      },
+      {
+        "key": "B",
+        "text_en": "An active object does not have a thread of control; a passive object has a thread of control.",
+        "text_vi": "Một đối tượng chủ động không có luồng điều khiển; một đối tượng bị động có luồng điều khiển."
+      },
+      {
+        "key": "C",
+        "text_en": "An active object executes in a distributed system; a passive object executes in a centralized system.",
+        "text_vi": "Một đối tượng chủ động thực thi trong một hệ thống phân tán; một đối tượng bị động thực thi trong một hệ thống tập trung."
+      },
+      {
+        "key": "D",
+        "text_en": "An active object has a thread of control, a passive object does not have a thread of control.",
+        "text_vi": "Một đối tượng chủ động có một luồng điều khiển, một đối tượng bị động không có luồng điều khiển."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_vi": "Đối tượng chủ động sở hữu luồng thực thi (thread) riêng và có thể tự khởi tạo hành động. Đối tượng bị động không có luồng riêng, nó chỉ hoạt động khi một đối tượng khác gọi phương thức của nó."
+  },
+  {
+    "id": 54,
+    "question_en": "What is an event-driven input task?",
+    "question_vi": "Tác vụ đầu vào theo sự kiện là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A task that executes every few seconds",
+        "text_vi": "Một tác vụ thực thi sau mỗi vài giây."
+      },
+      {
+        "key": "B",
+        "text_en": "A task that controls other tasks",
+        "text_vi": "Một tác vụ điều khiển các tác vụ khác."
+      },
+      {
+        "key": "C",
+        "text_en": "A task that receives inputs from an external device when it generates interrupts",
+        "text_vi": "Một tác vụ nhận đầu vào từ một thiết bị bên ngoài khi nó tạo ra ngắt."
+      },
+      {
+        "key": "D",
+        "text_en": "A task that checks whether there is new input from an external device",
+        "text_vi": "Một tác vụ kiểm tra xem có đầu vào mới từ một thiết bị bên ngoài hay không."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Tác vụ điều khiển bởi sự kiện (event-driven) sẽ ở trạng thái chờ cho đến khi có một sự kiện (ví dụ: một ngắt từ phần cứng) xảy ra, lúc đó nó mới được kích hoạt để xử lý."
+  },
+  {
+    "id": 55,
+    "question_en": "What is an optional use case?",
+    "question_vi": "Ca sử dụng tùy chọn (optional use case) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A use case with some optional steps",
+        "text_vi": "Một ca sử dụng với một số bước tùy chọn."
+      },
+      {
+        "key": "B",
+        "text_en": "A use case that does not need to be developed",
+        "text_vi": "Một ca sử dụng không cần phải được phát triển."
+      },
+      {
+        "key": "C",
+        "text_en": "A use case that is required by some product line members but not others",
+        "text_vi": "Một ca sử dụng được yêu cầu bởi một số thành viên dòng sản phẩm nhưng không phải bởi các thành viên khác."
+      },
+      {
+        "key": "D",
+        "text_en": "A use case that can be chosen in place of a different use case in a SPL member",
+        "text_vi": "Một ca sử dụng có thể được chọn thay cho một ca sử dụng khác trong một thành viên SPL."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Trong ngữ cảnh Dòng sản phẩm phần mềm (Software Product Line - SPL), 'optional use case' là một chức năng chỉ có mặt ở một số sản phẩm trong dòng sản phẩm đó, chứ không phải tất cả."
+  },
+  {
+    "id": 56,
+    "question_en": "What is a kernel class in a SPL?",
+    "question_vi": "Lớp hạt nhân (kernel class) trong SPL là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "An entity class in the SPL",
+        "text_vi": "Một lớp thực thể trong SPL."
+      },
+      {
+        "key": "B",
+        "text_en": "A SPL class that stores essential data",
+        "text_vi": "Một lớp SPL lưu trữ dữ liệu thiết yếu."
+      },
+      {
+        "key": "C",
+        "text_en": "A class that is required by all members of the SPL",
+        "text_vi": "Một lớp được yêu cầu bởi tất cả các thành viên của SPL."
+      },
+      {
+        "key": "D",
+        "text_en": "An external class to the SPL",
+        "text_vi": "Một lớp bên ngoài SPL."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "'Kernel class' (lớp hạt nhân) trong Dòng sản phẩm phần mềm (SPL) là những lớp cốt lõi, bắt buộc phải có mặt trong mọi sản phẩm được tạo ra từ dòng sản phẩm đó."
+  },
+  {
+    "id": 57,
+    "question_en": "What is a software product line (SPL)?",
+    "question_vi": "Dòng sản phẩm phần mềm (SPL) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "A family of systems with some common components and some variable components",
+        "text_vi": "Một họ các hệ thống với một số thành phần chung và một số thành phần biến đổi."
+      },
+      {
+        "key": "B",
+        "text_en": "An assembly line",
+        "text_vi": "Một dây chuyền lắp ráp."
+      },
+      {
+        "key": "C",
+        "text_en": "A family of identical systems",
+        "text_vi": "Một họ các hệ thống giống hệt nhau."
+      },
+      {
+        "key": "D",
+        "text_en": "The software products marketed by a company",
+        "text_vi": "Các sản phẩm phần mềm được một công ty tiếp thị."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Dòng sản phẩm phần mềm (SPL) là một tập hợp các hệ thống phần mềm có chung một kiến trúc và các thành phần cốt lõi (common), nhưng khác nhau ở các thành phần biến đổi (variable) để tạo ra các sản phẩm riêng biệt."
+  },
+  {
+    "id": 58,
+    "question_en": "Which of the following is not performance-related?",
+    "question_vi": "Cái nào sau đây không liên quan đến hiệu năng?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "System response time",
+        "text_vi": "Thời gian phản hồi của hệ thống."
+      },
+      {
+        "key": "B",
+        "text_en": "System throughput",
+        "text_vi": "Thông lượng của hệ thống."
+      },
+      {
+        "key": "C",
+        "text_en": "System availability",
+        "text_vi": "Tính sẵn sàng của hệ thống."
+      },
+      {
+        "key": "D",
+        "text_en": "System capacity",
+        "text_vi": "Dung lượng của hệ thống."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_vi": "Thời gian phản hồi, thông lượng và dung lượng đều là các chỉ số đo lường hiệu năng (performance). Tính sẵn sàng (availability) là một chỉ số về độ tin cậy (reliability), đo lường khả năng hệ thống hoạt động khi cần."
+  },
+  {
+    "id": 59,
+    "question_en": "Which of the following system problems does availability address?",
+    "question_vi": "Tính sẵn sàng giải quyết vấn đề hệ thống nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Denial of service",
+        "text_vi": "Từ chối dịch vụ."
+      },
+      {
+        "key": "B",
+        "text_en": "Single point of failure",
+        "text_vi": "Điểm lỗi duy nhất."
+      },
+      {
+        "key": "C",
+        "text_en": "System throughput",
+        "text_vi": "Thông lượng hệ thống."
+      },
+      {
+        "key": "D",
+        "text_en": "System penetration",
+        "text_vi": "Xâm nhập hệ thống."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_vi": "Tính sẵn sàng (availability) được cải thiện bằng cách loại bỏ các 'điểm lỗi duy nhất' (single point of failure). Nếu một thành phần lỗi mà cả hệ thống sập, đó là một điểm lỗi duy nhất."
+  },
+  {
+    "id": 60,
+    "question_en": "What is reusability?",
+    "question_vi": "Khả năng tái sử dụng (reusability) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "The extent to which software implementation is reusable",
+        "text_vi": "Mức độ mà việc triển khai phần mềm có thể tái sử dụng."
+      },
+      {
+        "key": "B",
+        "text_en": "The extent to which the system is capable of growing after its initial deployment",
+        "text_vi": "Mức độ mà hệ thống có khả năng phát triển sau khi triển khai ban đầu."
+      },
+      {
+        "key": "C",
+        "text_en": "The extent to which SPL technology can be introduced",
+        "text_vi": "Mức độ mà công nghệ SPL có thể được giới thiệu."
+      },
+      {
+        "key": "D",
+        "text_en": "The extent to which the software is common among a program family",
+        "text_vi": "Mức độ mà phần mềm là chung giữa một họ chương trình."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_vi": "Khả năng tái sử dụng (reusability) đo lường mức độ một thành phần hoặc một đoạn mã có thể được sử dụng lại trong các ngữ cảnh hoặc ứng dụng khác nhau mà không cần sửa đổi hoặc sửa đổi rất ít."
+  }
+]
