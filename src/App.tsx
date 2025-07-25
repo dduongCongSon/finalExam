@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css'; // Import file CSS
 import { QuestionService } from './services/questionsService'; 
 import type { Question } from './types/questionsType';
