@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'; // Import file CSS
+import { QuestionService } from './services/questionsService'; 
+import type { Question } from './types/questionsType';
 
 export default function App() {
-  const [quizData, setQuizData] = useState([]);
+  const [quizData, setQuizData] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [language, setLanguage] = useState('vi'); // 'vi' for Vietnamese, 'en' for English
 
-  // Fetch data from the API when the component mounts
+  // Sử dụng useEffect để lấy dữ liệu từ service khi component được tải
   useEffect(() => {
     const fetchQuizData = async () => {
       try {
-        const response = await fetch('https://6883552921fa24876a9da966.mockapi.io/questions');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+        setLoading(true);
+        setError(null);
+        const data = await QuestionService.getAllQuestions();
         setQuizData(data);
-      } catch (e) {
-        setError(e.message);
+      } catch (e: any) {
+        setError(e.message || "Đã xảy ra lỗi không xác định.");
       } finally {
         setLoading(false);
       }
     };
 
     fetchQuizData();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); // Mảng rỗng đảm bảo hiệu ứng này chỉ chạy một lần
 
   // Hàm chuyển đổi ngôn ngữ
   const toggleLanguage = () => {
@@ -38,7 +38,7 @@ export default function App() {
   };
 
   // Xử lý khi người dùng chọn một đáp án
-  const handleAnswerSelect = (optionKey) => {
+  const handleAnswerSelect = (optionKey: string) => {
     if (!isAnswered) {
       setSelectedAnswer(optionKey);
     }
@@ -71,24 +71,10 @@ export default function App() {
     setIsAnswered(false);
     setScore(0);
     setShowResults(false);
-    setLoading(true); // Optional: show loading while resetting
-    // Refetch data if needed, or just reset state
-    const refetch = async () => {
-        try {
-            const response = await fetch('https://6883552921fa24876a9da966.mockapi.io/questions');
-            const data = await response.json();
-            setQuizData(data);
-        } catch(e) {
-            setError(e.message);
-        } finally {
-            setLoading(false);
-        }
-    }
-    refetch();
   };
 
   // Hàm để xác định class CSS cho các lựa chọn
-  const getOptionClassName = (optionKey) => {
+  const getOptionClassName = (optionKey: string) => {
     let className = 'option-btn';
     if (!isAnswered) {
       if (selectedAnswer === optionKey) {
