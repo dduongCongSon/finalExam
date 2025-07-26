@@ -1,20 +1,59 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './App.css'; // Import file CSS
 import { QuestionService } from './services/questionsService'; 
 import type { Question } from './types/questionsType';
+// SVG Icons for navigation
+const PrevIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="15 18 9 12 15 6"></polyline>
+  </svg>
+);
+
+const NextIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+);
+
+const RestartIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2.5 2v6h6M21.5 22v-6h-6"/><path d="M22 11.5A10 10 0 0 0 3.5 12.5"/><path d="M2 12.5a10 10 0 0 0 18.5-1"/>
+    </svg>
+);
+
+const MoreIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
+    </svg>
+);
+
+const LangIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </svg>
+);
+
 
 export default function App() {
   const [quizData, setQuizData] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [score, setScore] = useState(0);
-  const [showResults, setShowResults] = useState(false);
-  const [language, setLanguage] = useState('vi'); // 'vi' for Vietnamese, 'en' for English
+  
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(() => {
+    const savedIndex = localStorage.getItem('currentQuestionIndex');
+    return savedIndex ? parseInt(savedIndex, 10) : 0;
+  });
+  
+  const [userAnswers, setUserAnswers] = useState<Record<number, string>>(() => {
+    const savedAnswers = localStorage.getItem('userAnswers');
+    return savedAnswers ? JSON.parse(savedAnswers) : {};
+  });
 
-  // Sử dụng useEffect để lấy dữ liệu từ service khi component được tải
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [language, setLanguage] = useState('vi');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const fetchQuizData = async () => {
       try {
@@ -28,164 +67,199 @@ export default function App() {
         setLoading(false);
       }
     };
-
     fetchQuizData();
-  }, []); // Mảng rỗng đảm bảo hiệu ứng này chỉ chạy một lần
+  }, []);
 
-  // Hàm chuyển đổi ngôn ngữ
-  const toggleLanguage = () => {
-    setLanguage(prevLang => prevLang === 'vi' ? 'en' : 'vi');
-  };
+  useEffect(() => {
+    localStorage.setItem('currentQuestionIndex', currentQuestionIndex.toString());
+  }, [currentQuestionIndex]);
 
-  // Xử lý khi người dùng chọn một đáp án
+  useEffect(() => {
+    localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+  }, [userAnswers]);
+  
+  // Effect để đóng menu khi click ra ngoài
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
+
+  const isCurrentQuestionAnswered = userAnswers[currentQuestionIndex] != null;
+
   const handleAnswerSelect = (optionKey: string) => {
-    if (!isAnswered) {
-      setSelectedAnswer(optionKey);
+    if (!isCurrentQuestionAnswered) {
+      setSelectedOption(optionKey);
     }
   };
 
-  // Xử lý khi người dùng nộp bài
-  const handleSubmitAnswer = () => {
-    if (selectedAnswer === null) return;
-    setIsAnswered(true);
-    if (selectedAnswer === quizData[currentQuestionIndex].correct_answer) {
-      setScore(prevScore => prevScore + 1);
+  const handleSubmit = () => {
+    if (selectedOption) {
+      setUserAnswers(prev => ({
+        ...prev,
+        [currentQuestionIndex]: selectedOption
+      }));
+      setSelectedOption(null);
+    }
+  };
+  
+  const handlePrevQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prevIndex => prevIndex - 1);
+      setSelectedOption(null);
     }
   };
 
-  // Chuyển sang câu hỏi tiếp theo
   const handleNextQuestion = () => {
     if (currentQuestionIndex < quizData.length - 1) {
       setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-      setSelectedAnswer(null);
-      setIsAnswered(false);
-    } else {
-      setShowResults(true);
+      setSelectedOption(null);
     }
   };
 
-  // Chơi lại từ đầu
   const handleRestartQuiz = () => {
+    localStorage.removeItem('currentQuestionIndex');
+    localStorage.removeItem('userAnswers');
     setCurrentQuestionIndex(0);
-    setSelectedAnswer(null);
-    setIsAnswered(false);
-    setScore(0);
-    setShowResults(false);
+    setUserAnswers({});
+    setSelectedOption(null);
+    setIsMenuOpen(false);
+  };
+  
+  const toggleLanguage = () => {
+    setLanguage(prevLang => prevLang === 'vi' ? 'en' : 'vi');
+    setIsMenuOpen(false);
   };
 
-  // Hàm để xác định class CSS cho các lựa chọn
   const getOptionClassName = (optionKey: string) => {
     let className = 'option-btn';
-    if (!isAnswered) {
-      if (selectedAnswer === optionKey) {
-        className += ' selected';
-      }
-    } else {
-      if (optionKey === quizData[currentQuestionIndex].correct_answer) {
+    const submittedAnswer = userAnswers[currentQuestionIndex];
+
+    if (submittedAnswer) {
+      const isCorrect = optionKey === quizData[currentQuestionIndex].correct_answer;
+      if (isCorrect) {
         className += ' correct';
-      } else if (optionKey === selectedAnswer) {
+      } else if (optionKey === submittedAnswer) {
         className += ' incorrect';
       } else {
         className += ' disabled';
+      }
+    } else {
+      if (selectedOption === optionKey) {
+        className += ' selected';
       }
     }
     return className;
   };
 
-  // Giao diện tải dữ liệu
   if (loading) {
-    return <div className="quiz-container"><div className="loading-text">Đang tải câu hỏi...</div></div>;
+    return <div className="quiz-container dark-mode"><div className="loading-text">Đang tải câu hỏi...</div></div>;
   }
 
-  // Giao diện lỗi
   if (error) {
-    return <div className="quiz-container"><div className="error-text">Lỗi tải dữ liệu: {error}</div></div>;
+    return <div className="quiz-container dark-mode"><div className="error-text">Lỗi tải dữ liệu: {error}</div></div>;
   }
   
-  // Giao diện kết quả
-  if (showResults) {
-    return (
-      <div className="quiz-container">
-        <div className="results-card">
-          <button onClick={toggleLanguage} className="lang-switch-btn">
-            {language === 'vi' ? 'EN' : 'VI'}
-          </button>
-          <h2>{language === 'vi' ? 'Hoàn thành!' : 'Finished!'}</h2>
-          <p className="results-score">
-            {language === 'vi' ? 'Điểm của bạn là: ' : 'Your score is: '} 
-            <span>{score}</span> / {quizData.length}
-          </p>
-          <button onClick={handleRestartQuiz} className="action-btn restart-btn">
-            {language === 'vi' ? 'Làm lại' : 'Restart'}
-          </button>
-        </div>
-      </div>
-    );
+  if (quizData.length === 0) {
+    return <div className="quiz-container dark-mode"><div className="loading-text">Không có dữ liệu câu hỏi.</div></div>;
   }
-  
+
   const currentQuestion = quizData[currentQuestionIndex];
 
-  // Giao diện bài trắc nghiệm
   return (
-    <div className="quiz-container">
+    <div className="quiz-container dark-mode">
       <div className="quiz-card">
-        <button onClick={toggleLanguage} className="lang-switch-btn">
-            {language === 'vi' ? 'EN' : 'VI'}
-        </button>
-        {/* Phần đầu */}
-        <div className="progress-section">
-          <p className="progress-info">
-            {language === 'vi' ? 'Câu hỏi' : 'Question'} {currentQuestionIndex + 1} <span>/ {quizData.length}</span>
-          </p>
-          <div className="progress-bar-container">
-            <div 
-              className="progress-bar" 
-              style={{ width: `${((currentQuestionIndex + 1) / quizData.length) * 100}%` }}
-            ></div>
-          </div>
+        <div className="quiz-header">
+            <div className="progress-section">
+                <p className="progress-info">
+                    {language === 'vi' ? 'Câu hỏi' : 'Question'} {currentQuestionIndex + 1} <span>/ {quizData.length}</span>
+                </p>
+                <div className="progress-bar-container">
+                    <div 
+                    className="progress-bar" 
+                    style={{ width: `${((currentQuestionIndex + 1) / quizData.length) * 100}%` }}
+                    ></div>
+                </div>
+            </div>
+            <div className="more-menu-container" ref={menuRef}>
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="nav-btn icon-btn more-btn" title="More options">
+                    <MoreIcon />
+                </button>
+                {isMenuOpen && (
+                    <div className="dropdown-menu">
+                        <button onClick={toggleLanguage} className="dropdown-item">
+                            <LangIcon />
+                            <span>{language === 'vi' ? 'English' : 'Tiếng Việt'}</span>
+                        </button>
+                        <button onClick={handleRestartQuiz} className="dropdown-item">
+                            <RestartIcon />
+                            <span>{language === 'vi' ? 'Làm lại' : 'Restart'}</span>
+                        </button>
+                    </div>
+                )}
+            </div>
         </div>
 
-        {/* Câu hỏi */}
         <div className="question-section">
-          <h2 className="question-vi">{language === 'vi' ? currentQuestion.question_vi : currentQuestion.question_en}</h2>
+          <h2 className="question-text">{language === 'vi' ? currentQuestion.question_vi : currentQuestion.question_en}</h2>
         </div>
 
-        {/* Các lựa chọn */}
         <div className="options-section">
           {currentQuestion.options.map((option) => (
             <button
               key={option.key}
               onClick={() => handleAnswerSelect(option.key)}
-              disabled={isAnswered}
+              disabled={isCurrentQuestionAnswered}
               className={getOptionClassName(option.key)}
             >
-              <span className="option-key">{option.key}.</span>
+              <span className="option-key">{option.key}</span>
               <span className="option-text">{language === 'vi' ? option.text_vi : option.text_en}</span>
             </button>
           ))}
         </div>
-
-        {/* Nút Submit/Next và Giải thích */}
-        <div className="footer-section">
-          {isAnswered ? (
-            <div>
-              <div className="explanation-box">
+        
+        {isCurrentQuestionAnswered && (
+            <div className="explanation-box">
                 <h3>{language === 'vi' ? 'Giải thích:' : 'Explanation:'}</h3>
                 <p>{currentQuestion.explanation_vi}</p>
-              </div>
-              <button onClick={handleNextQuestion} className="action-btn">
-                {currentQuestionIndex < quizData.length - 1 ? (language === 'vi' ? 'Câu tiếp theo' : 'Next Question') : (language === 'vi' ? 'Xem kết quả' : 'View Results')}
-              </button>
             </div>
-          ) : (
-            <button
-              onClick={handleSubmitAnswer}
-              disabled={selectedAnswer === null}
-              className="action-btn"
+        )}
+
+        <div className="footer-navigation">
+            <button 
+                onClick={handlePrevQuestion} 
+                disabled={currentQuestionIndex === 0}
+                className="nav-btn icon-btn"
+                aria-label="Previous Question"
             >
-              {language === 'vi' ? 'Trả lời' : 'Submit'}
+                <PrevIcon />
             </button>
-          )}
+
+            {!isCurrentQuestionAnswered && (
+                <button 
+                    onClick={handleSubmit}
+                    disabled={!selectedOption}
+                    className="nav-btn submit-btn"
+                >
+                    {language === 'vi' ? 'Trả lời' : 'Submit'}
+                </button>
+            )}
+
+            <button 
+                onClick={handleNextQuestion}
+                disabled={currentQuestionIndex === quizData.length - 1}
+                className="nav-btn icon-btn"
+                aria-label="Next Question"
+            >
+                <NextIcon />
+            </button>
         </div>
       </div>
     </div>
