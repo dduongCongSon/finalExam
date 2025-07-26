@@ -1,6 +1,6 @@
 import type { Question } from '../types/questionsType';
 
-const API_URL = '[https://6883552921fa24876a9da966.mockapi.io/questions](https://6883552921fa24876a9da966.mockapi.io/questions)';
+const API_URL = 'https://6883552921fa24876a9da966.mockapi.io/questions';
 
 export const QuestionService = {
   async getAllQuestions(): Promise<Question[]> {
