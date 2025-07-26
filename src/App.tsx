@@ -53,6 +53,7 @@ export default function App() {
   const [language, setLanguage] = useState('vi');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const fetchQuizData = async () => {
@@ -78,7 +79,6 @@ export default function App() {
     localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
   }, [userAnswers]);
   
-  // Effect để đóng menu khi click ra ngoài
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -90,6 +90,31 @@ export default function App() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuRef]);
+
+  // Effect để xử lý tự động chuyển câu
+  useEffect(() => {
+    // Xóa timer cũ trước khi tạo timer mới
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+
+    const submittedAnswer = userAnswers[currentQuestionIndex];
+    if (submittedAnswer && quizData.length > 0) {
+      const isCorrect = submittedAnswer === quizData[currentQuestionIndex].correct_answer;
+      if (isCorrect) {
+        timerRef.current = setTimeout(() => {
+          handleNextQuestion();
+        }, 2000);
+      }
+    }
+
+    // Cleanup function để xóa timer khi component unmount hoặc index thay đổi
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, [userAnswers, currentQuestionIndex, quizData]);
 
 
   const isCurrentQuestionAnswered = userAnswers[currentQuestionIndex] != null;
@@ -172,6 +197,8 @@ export default function App() {
   }
 
   const currentQuestion = quizData[currentQuestionIndex];
+  const submittedAnswer = userAnswers[currentQuestionIndex];
+  const isCorrect = submittedAnswer === currentQuestion.correct_answer;
 
   return (
     <div className="quiz-container dark-mode">
@@ -227,6 +254,11 @@ export default function App() {
         
         {isCurrentQuestionAnswered && (
             <div className="explanation-box">
+                {isCorrect && (
+                    <div className="auto-advance-timer">
+                        <div className="timer-bar-fill"></div>
+                    </div>
+                )}
                 <h3>{language === 'vi' ? 'Giải thích:' : 'Explanation:'}</h3>
                 <p>{currentQuestion.explanation_vi}</p>
             </div>
@@ -252,10 +284,20 @@ export default function App() {
                 </button>
             )}
 
+            {isCurrentQuestionAnswered && !isCorrect && (
+                <button 
+                    onClick={handleNextQuestion}
+                    disabled={currentQuestionIndex === quizData.length - 1}
+                    className="nav-btn submit-btn incorrect-next-btn"
+                >
+                    {language === 'vi' ? 'Tiếp theo' : 'Next'}
+                </button>
+            )}
+
             <button 
                 onClick={handleNextQuestion}
                 disabled={currentQuestionIndex === quizData.length - 1}
-                className="nav-btn icon-btn"
+                className={`nav-btn icon-btn ${isCurrentQuestionAnswered ? 'hidden' : ''}`}
                 aria-label="Next Question"
             >
                 <NextIcon />
